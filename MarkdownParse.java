@@ -24,7 +24,11 @@ public class MarkdownParse {
             {
                 
             }
-            else
+            else if(!markdown.substring(closeBracket + 1, closeBracket+2).equals("("))
+            {
+                
+            }
+            else 
             {
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
             }
