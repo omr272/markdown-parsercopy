@@ -98,7 +98,7 @@ public class MarkdownParseTest {
     public void testGetLinks8() throws IOException {
         Path fileName = Path.of("/Users/om/Desktop/markdown-parser/markdown-parsercopy/test-file8.md");
         String content = Files.readString(fileName);
-        List<String> expectedList = List.of();
+        List<String> expectedList = List.of("");
         assertEquals(expectedList, MarkdownParse.getLinks(content));
     }
 
